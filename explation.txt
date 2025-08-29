@@ -1,0 +1,7 @@
+Call Quality Analyzer is a straightforward yet efficient project developed in Google Colab to analyze the quality of sales calls. The program takes a sales call recording, translates it into text using the light-weight Whisper model, and subsequently uses natural language processing methods to derive key insights.
+
+The analyzer initially downloads and processes the audio from YouTube via yt-dlp and ffmpeg to make it clean and transcribable. The call is transcribed in text and timestamps with Whisper, enabling analysis of speech patterns. A simple speaker separation technique is utilized to estimate who is speaking, making the system lightweight and ideal for freshers.
+
+From the transcript, the tool derives key metrics like the ratio of talk-time (how much each person spoke), questions asked, and longest monologue. Sentiment analysis is done using the VADER library to determine if the tone of the call was overall positive, neutral, or negative. Last but not least, a rule-based system gives one actionable insight, for example, asking the sales rep to get the customer more involved.
+
+This project illustrates real-world usage of Python, speech-to-text, and NLP while still being efficient, simple to implement, and runnable on Colab's free level.
